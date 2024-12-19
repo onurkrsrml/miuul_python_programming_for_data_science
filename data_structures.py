@@ -146,4 +146,137 @@ long_str
 
 "bool" in long_str
 
+###############################################
+# String (Karakter Dizisi) Metodları
+###############################################
+
+# method lara erişmek için kullanılır
+dir(str)
+dir(int)
+
+#######################
+# len
+#######################
+
+#len method u bir gömülü fonksiyondur, str lere uygulanabilir. karakter boyut/uzunluk bilgisi verir
+
+name = "john"
+type(name)
+type(len) #builtin_function_or_method
+
+len(name)
+len("onurkarasurmeli")
+len("miuul")
+
+### !!! Eğer bir fonksiyon class yapısı içinde tanımlandı ise "method", değil ise "function" dur !!!
+
+#######################
+# upper() & lower(): küçük-büyük dönüşümleri
+#######################
+
+# girilen str büyük karakter dizilerine dönüştürdü
+"miuul".upper()
+# girilen str küçük karakter dizilerine dönüştürdü
+"MIUUL".lower()
+
+# type(upper)
+# type(upper())
+
+#######################
+# replace: karakter değiştirir
+#######################
+
+hi = "Hello AI Era"
+hi.replace("l", "p")
+
+#######################
+# split: böler
+#######################
+
+# bir değer girilmez ise ön tanımlı değer yani boşluk böler
+"Hello AI Era".split()
+
+#######################
+# strip: kırpar
+#######################
+
+" ofofo ".strip()
+"ofofo".strip("o")
+
+
+#######################
+# capitalize: ilk harfi büyütür
+#######################
+
+"foo".capitalize()
+
+dir("foo")
+
+"foo".startswith("f")
+
+###############################################
+# Liste (List)
+###############################################
+
+# - Değiştirilebilir
+# - Sıralıdır. Index işlemleri yapılabilir.
+# - Kapsayıcıdır.
+
+notes = [1, 2, 3, 4]
+type(notes)
+names = ["a", "b", "v", "d"]
+not_nam = [1, 2, 3, "a", "b", True, [1, 2, 3]]
+type(not_nam)
+
+not_nam[0]
+not_nam[5]
+not_nam[6]
+
+# liste içerisindeki liste elemanına erişme
+not_nam[6][1]
+
+type(not_nam[6])
+type(not_nam[5])
+
+type(not_nam[6][1])
+
+notes[0] = 99
+
+not_nam[0:4]
+
+###############################################
+# Liste Metodları (List Methods)
+###############################################
+
+dir(notes)
+
+#######################
+# len: builtin python fonksiyonu, boyut bilgisi.
+#######################
+
+len(notes)
+len(not_nam)
+
+#######################
+# append: eleman ekler
+#######################
+
+notes
+
+# liste sonuna eleman eklendi
+notes.append(100)
+
+#######################
+# pop: indexe göre siler
+#######################
+
+# girilen index teki değer listeden silindi
+notes.pop(0)
+
+#######################
+# insert: indexe ekler
+#######################
+
+# girilen  index teki değer yerine yeni değer eklendi
+notes.insert(2, 99)
 
