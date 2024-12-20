@@ -280,3 +280,106 @@ notes.pop(0)
 # girilen  index teki değer yerine yeni değer eklendi
 notes.insert(2, 99)
 
+###############################################
+# Sözlük (Dictonary)
+###############################################
+
+# Değiştirilebilir.
+# Sırasız. (3.7 sonra sıralı.)
+# Kapsayıcı.
+
+# key-value
+# dic = {key: value} dictionary dir. key ve value değerleri vardır.
+# key ler unique olmalıdır.
+# key ler değiştirilemez olmalıdır. (immutable)
+# value ler değiştirilebilir.
+# key ler sadece string ve sayısal ifadeler olabilir.
+# value herhangi bir veri tipi olabilir.
+
+# bu yapıda yani süslü parantez ile tanımlamalara bir diğer örnek set yapısıdır.
+# set yapısıda süslü parantez ile tanımlanır fakat set yapısında key-value yapısı yoktur.
+# bu konudaki en basit fark set lerde value değeri yoktur : nokta ifadesi yoktur.
+# set yapısında sadece key ler vardır ve key ler unique olmalıdır.
+# set yapısında key ler değiştirilemez olmalıdır. (immutable)
+# set yapısında key ler sadece string ve sayısal ifadeler olabilir.
+# set yapısında value herhangi bir veri tipi olabilir.
+# set yapısında key ler sırasızdır.
+
+dictionary = {"REG": "Regression",
+              "LOJ": "Logistic Regression",
+              "CART": "Classification and Regrassion Trees"}
+
+dictionary["REG"]
+
+dictionary = {"REG": 10,
+              "LOJ": 20,
+              "CART": 30}
+
+dictionary = {"REG": ["RMSE", 10],
+              "LOJ": ["MSE", 20],
+              "CART": ["SSE", 30]}
+
+
+
+dictionary["CART"][1]
+
+dict = {"key": "value"}
+type(dict)
+
+x = {"name": "Peter", "Age": 36}
+type(x)
+print(x["Age"])
+
+#######################
+# Key Sorgulama
+#######################
+
+"YSA" in dictionary
+
+#######################
+# Key'e Göre Value'ya Erişmek
+#######################
+
+dictionary["REG"]
+dictionary.get("REG")
+
+#######################
+# Value Değiştirmek
+#######################
+
+dictionary["REG"] = ["YSA", 10]
+
+#######################
+# Tüm Key'lere Erişmek
+#######################
+
+# dil içerisine tanımladığımız veri yapısının adını girersek ya da tipini ifade eden
+# kısaltmayı girersek bu veri yapısına uygun olan metodları görebiliriz.
+dictionary.keys()
+
+#######################
+# Tüm Value'lara Erişmek
+#######################
+
+dictionary.values()
+
+
+#######################
+# Tüm Çiftleri Tuple Halinde Listeye Çevirme
+#######################
+
+# key ve value değerlerini tuple yapısına çevirir ve liste içerisine atar
+dictionary.items()
+
+#######################
+# Key-Value Değerini Güncellemek
+#######################
+
+dictionary.update({"REG": 11})
+
+#######################
+# Yeni Key-Value Eklemek
+#######################
+
+# eğer ki girilen key değeri dictionary içerisinde yok ise yeni key-value ekler, var ise günceller
+dictionary.update({"RF": 10})

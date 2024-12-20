@@ -19,6 +19,11 @@ env/
 
 # PyCharm
 .idea/
+echo '.idea' >> .gitignore
 
 # Diğer
 *.log
+
+# Default ignored files
+/shelf/
+/workspace.xml
