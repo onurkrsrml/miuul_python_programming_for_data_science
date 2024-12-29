@@ -342,3 +342,171 @@ add_element(1, 9)
 # Buna rağmen local etki alanındaki değişkenler global etki alanını değiştirebilir.
 
 
+###############################################
+# KOŞULLAR (CONDITIONS)
+###############################################
+
+# True-False'u hatırlayalım.
+1 == 1
+1 == 2
+
+# if
+if 1 == 1:
+    print("something")
+
+if 1 == 2:
+    print("something")
+
+number = 11
+
+if number == 10:
+    print("number is 10")
+
+number = 10
+number = 20
+
+
+def number_check(number):
+    if number == 10:
+        print("number is 10")
+
+number_check(12)
+
+
+#######################
+# else
+#######################
+
+def number_check(number):
+    if number == 10:
+        print("number is 10")
+
+number_check(12)
+
+
+def number_check(number):
+    if number == 10:
+        print("number is 10")
+    else:
+        print("number is not 10")
+
+number_check(12)
+
+#######################
+# elif
+#######################
+
+def number_check(number):
+    if number > 10:
+        print("greater than 10")
+    elif number < 10:
+        print("less than 10")
+    else:
+        print("equal to 10")
+
+number_check(6)
+
+
+### Bireysel Denemelerim
+
+eski_maas = 5500
+print(eski_maas)
+if eski_maas == 5000:
+    print("eski_maas 5000")
+
+if eski_maas != 5000:
+    print("eski_maas 5000 değil")
+
+if eski_maas > 5000:
+    print("eski_maas 5000 den büyük")
+
+if eski_maas < 5000:
+    print("eski_maas 5000 den küçük")
+
+def maas_kontrol(eski_maas):
+    if eski_maas == 5000:
+        print("eski_maas 5000")
+    elif eski_maas > 5000:
+        print("eski_maas 5000 den büyük")
+    elif eski_maas < 5000:
+        print("eski_maas 5000 den kücük")
+    else:
+        print("eski_maas 5000 değil")
+
+maas_kontrol(eski_maas)
+
+
+maaslar = [5000, 6000, 7000, 8000, 9000]
+
+def maas_kontrol(maaslar):
+    if maaslar[0] == 5000:
+        print("maas 5000")
+    else:
+        print("maas 5000 değil")
+
+    if maaslar[1] == 5000:
+        print("maas 5000")
+    else:
+        print("maas 5000 değil")
+
+maas_kontrol(maaslar)
+
+
+for a in maaslar:
+    if a == 5000:
+        print("maas 5000")
+    else:
+        print("maas 5000 değil")
+
+
+for maas in maaslar:
+    print(maas + maas*0.2)
+
+for maas in maaslar:
+    print(int(maas + maas*0.5))
+
+
+ücretler = [20, 30, 40, 50, 60]
+
+for ücret in ücretler:
+    print(ücret)
+
+for ücret in ücretler:
+    print(ücret*20/100 + ücret)
+
+for ücret in ücretler:
+    print(int(ücret + ücret * 0.2))
+
+for ücret in ücretler:
+    print(int(ücret + ücret * 0.3))
+
+for ücret in ücretler:
+    print(int(ücret + ücret * 0.5))
+
+
+def yeni_ücret(ücret, rate):
+    return int(ücret*rate/100 + ücret)
+
+yeni_ücret(15, 10)
+yeni_ücret(45, 30)
+
+for ücret in ücretler:
+    print(yeni_ücret(ücret, 10))
+
+ücretler2 = [15, 25, 35, 45, 55]
+
+for ücret in ücretler2:
+    print(yeni_ücret(ücret, 10))
+
+
+#ücret 30 ve üstü olanlara yüzde 10 30 altındakilere yüzde 20 zam yapılacak.
+for ücret in ücretler:
+    if ücret >= 30:
+        print(yeni_ücret(ücret, 10))
+    else:
+        print(yeni_ücret(ücret, 20))
+
+
+### Bireysel Denemelerim
+
+
