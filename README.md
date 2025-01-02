@@ -7,7 +7,7 @@ Bu proje, Conda sanal ortamında Python ile geliştirilmiş bir projedir. Proje,
 Bu projeyi yerel makinenizde çalıştırabilmek için aşağıdaki adımları takip edebilirsiniz:
 
 ### Gereksinimler
-- Python 3.x
+- Python 3.12.8
 - Conda (Anaconda ya da Miniconda)
 - Git
 

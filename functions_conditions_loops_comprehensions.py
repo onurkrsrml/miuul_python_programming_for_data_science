@@ -407,7 +407,7 @@ def number_check(number):
 number_check(6)
 
 
-### Bireysel Denemelerim
+### Bireysel Denemelerim Başlangıç
 
 eski_maas = 5500
 print(eski_maas)
@@ -507,6 +507,76 @@ for ücret in ücretler:
         print(yeni_ücret(ücret, 20))
 
 
-### Bireysel Denemelerim
+### Bireysel Denemelerim Sonu
+
+
+#######################
+# Uygulama - Mülakat Sorusu
+#######################
+
+# Amaç: Aşağıdaki şekilde string değiştiren fonksiyon yazmak istiyoruz.
+
+# before: "hi my name is john and i am learning python"
+# after: "Hi mY NaMe iS JoHn aNd i aM LeArNiNg pYtHoN"
+
+
+# Bireysel Denemelerim Başlangıç
+cümle = "hi my name is john and i am learning python"
+
+len(cümle)
+
+a=0
+yeni_cümle = []
+for i in cümle:
+    a= a + 1
+    if a % 2 == 0:
+        yeni_cümle.append(i.upper())
+    else:
+        yeni_cümle.append(i.lower())
+
+yeni_cümle = ''.join(yeni_cümle)
+print(yeni_cümle)
+
+------------------------------------------------------------------------------------------------------------------------
+cümle.split()
+yeni_cümle2 = 0
+i = 0
+def change_string(cümle):
+    for i in range((yeni_cümle2)):
+        if i % 2 == 0:
+            yeni_cümle2[i] = yeni_cümle2[i].lower()
+        else:
+            yeni_cümle2[i] = yeni_cümle2[i].upper()
+    return ' '.join(yeni_cümle2)
+
+change_string("hi my name is john and i am learning python")
+
+# Bireysel Denemelerim Sonu
+
+
+# range fonksiyonu bize iki değer arasında sayı üretme imkanı sağlar
+range(len("miuul")) # m, i, u, u, l
+
+range(0, 5) # 0, 1, 2, 3, 4
+
+for i in range(len("miuul")): # tüm değişkenlerin indexlerini yazdırmak için
+    print(i)
+
+# 4 % 2 = 0
+# m =
+
+def alternating(string):
+    new_string = "" # değişiklikleri kaydetmek için boş bir string oluşturduk.
+    # girilen string in tüm index lerini gez
+    for string_index in range(len(string)): # string in bütün indexlerini gezmek için
+        # index çift ise büyük harfe çevir
+        if string_index % 2 == 0: # indexlerin çift olup olmadığını kontrol ediyoruz
+            new_string += string[string_index].upper() # çift indexlerin harflerini büyük yap ve yeni string e ekle
+        # index tek ise küçük harfe çevir
+        else:
+            new_string += string[string_index].lower() # tek indexlerin harflerini küçük yap ve yeni string e ekle
+    print(new_string) # yeni string i yazdır
+
+alternating("miuul") # fonksiyonu çalıştır
 
 
