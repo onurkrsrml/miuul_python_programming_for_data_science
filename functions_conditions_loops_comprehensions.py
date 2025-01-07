@@ -126,9 +126,9 @@ def summer(arg1, arg2):
 summer(1, 3)
 
 
-#######################
+######################################
 # Fonksiyonların Statement/Body Bölümü
-#######################
+######################################
 
 # def function_name(parameters/arguments):
 #     statements (function body)
@@ -184,9 +184,9 @@ add_element(180, 10)
 # Local scope/etki alanındaki değişkenler fonksiyonun çalıştığı süre boyunca geçerlidir.
 
 
-#######################
+###################################################################
 # Ön Tanımlı Argümanlar/Parametreler (Default Parameters/Arguments)
-#######################
+###################################################################
 
 def divide(a, b):
     print(a / b)
@@ -510,9 +510,9 @@ for ücret in ücretler:
 ### Bireysel Denemelerim Sonu
 
 
-#######################
+###########################
 # Uygulama - Mülakat Sorusu
-#######################
+###########################
 
 # Amaç: Aşağıdaki şekilde string değiştiren fonksiyon yazmak istiyoruz.
 
@@ -521,6 +521,8 @@ for ücret in ücretler:
 
 
 # Bireysel Denemelerim Başlangıç
+
+# 1. Deneme
 cümle = "hi my name is john and i am learning python"
 
 len(cümle)
@@ -537,7 +539,7 @@ for i in cümle:
 yeni_cümle = ''.join(yeni_cümle)
 print(yeni_cümle)
 
-------------------------------------------------------------------------------------------------------------------------
+# 2. Deneme
 cümle.split()
 yeni_cümle2 = 0
 i = 0
@@ -578,5 +580,115 @@ def alternating(string):
     print(new_string) # yeni string i yazdır
 
 alternating("miuul") # fonksiyonu çalıştır
+
+
+##########################
+# break & continue & while
+##########################
+
+salaries = [1000, 2000, 3000, 4000, 5000]
+
+for salary in salaries:
+    if salary == 3000:
+        break
+    print(salary)
+
+
+for salary in salaries:
+    if salary == 3000:
+        continue
+    print(salary)
+
+
+# while
+
+number = 1
+while number < 5:
+    print(number)
+    number += 1
+
+
+##################################################
+# Enumerate: Otomatik Counter/Indexer ile for loop
+##################################################
+
+students = ["John", "Mark", "Venessa", "Mariam"]
+
+for student in students:
+    print(student)
+
+# for index, student in enumerate(students, 1): # buradaki 1 indexin başlangıç değerini belirler. farklı bir değer de yazılabilir.
+for index, student in enumerate(students):
+    print(index, student)
+
+A = []
+B = []
+
+for index, student in enumerate(students):
+    if index % 2 == 0:
+        A.append(student)
+    else:
+        B.append(student)
+
+
+###########################
+# Uygulama - Mülakat Sorusu
+###########################
+# divide_students fonksiyonu yazınız.
+# Çift indexte yer alan öğrencileri bir listeye alınız.
+# Tek indexte yer alan öğrencileri başka bir listeye alınız.
+# Fakat bu iki liste tek bir liste olarak return olsun.
+
+students = ["John", "Mark", "Venessa", "Mariam"]
+
+
+# Bireysel Denemelerim Başlangıç
+
+CIFT = []
+TEK = []
+
+def divide_students(students, new_students = []):
+    for index, student in enumerate(students):
+        if index % 2 == 0:
+            CIFT.append(student)
+        else:
+            TEK.append(student)
+    return new_students
+
+divide_students(students)
+new_students = CIFT + TEK
+
+# Bireysel Denemelerim Sonu
+
+
+def divide_students(students):
+    groups = [[], []]
+    for index, student in enumerate(students):
+        if index % 2 == 0:
+            groups[0].append(student)
+        else:
+            groups[1].append(student)
+    print(groups)
+    return groups
+
+st = divide_students(students)
+st[0]
+st[1]
+
+
+###################################################
+# alternating fonksiyonunun enumerate ile yazılması
+###################################################
+
+def alternating_with_enumerate(string):
+    new_string = ""
+    for i, letter in enumerate(string):
+        if i % 2 == 0:
+            new_string += letter.upper()
+        else:
+            new_string += letter.lower()
+    print(new_string)
+
+alternating_with_enumerate("hi my name is john and i am learning python")
 
 
