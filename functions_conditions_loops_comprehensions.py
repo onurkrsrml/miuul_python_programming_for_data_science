@@ -1014,7 +1014,7 @@ df[num_cols].agg(new_dict)
 #################
 
 # veri setlerindeki uyarıları kapatmak için kullanılır
-warnings.filterwarnings("ignore")
+#warnings.filterwarnings("ignore")
 
 # comprehensions sırası
 # 1) for yapıştır, 2)if var mı? (for + if) / else var mı? (if + for), 3)en başa koşulları yaz
