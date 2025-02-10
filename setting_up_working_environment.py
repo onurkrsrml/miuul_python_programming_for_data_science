@@ -75,3 +75,4 @@ d = a - c
 
 # Paketleri dosyadan sanal ortama yükleme:
 # conda env create -f environment.yaml
+
