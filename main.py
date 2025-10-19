@@ -1,9 +1,192 @@
-# !!!!!!****** DİKKAT ******!!!!!!
+
+########################################################################################################################
+########################################################################################################################
+###############################<<<<<< PYTHON PROGRAMMING FOR DATA SCIENCE >>>>>>########################################
+########################################################################################################################
+########################################################################################################################
+
+# 1 - ÇALIŞMA ORTAMI AYARLARI
+# 2 - VERİ YAPILARI
+# 3.1 - FONKSİYONLAR
+# 3.2 - KOŞULLAR VE DÖNGÜLER
+# 3.3 - COMPREHENSIONS
+# 4.1 - PYTHON İLE VERİ ANALİZİ: NUMPY
+# 4.2 - PYTHON İLE VERİ ANALİZİ: PANDAS
+# 4.3 - PYTHON İLE VERİ ANALİZİ: VERİ GÖRSELLEŞTİRME
+# 4.4 - PYTHON İLE VERİ ANALİZİ: GELİŞMİŞ FONKSİYONEL KEŞİFÇİ VERİ ANALİZİ
+# 5 - MÜLAKAT SORULARI
+# 6 - CASE STUDY
+
+
+
+########################################################################################################################
+# 1 - ÇALIŞMA ORTAMI AYARLARI
+########################################################################################################################
+
+###########################################################
+# Sayılar (Numbers) ve Karakter Dizileri (Strings)
+###########################################################
+
+print(9) #integer
+print(9.2) #float
+
+type("Mrb")
+
+###########################################################
+# Atamalar ve Değişkenler (Assignments and Variables)
+###########################################################
+
+a = 9
+
+b = "Onur"
+
+c = 10
+
+d = a - c
+
+###########################################################
+# Virtual Environment (Sanal Ortam)  ve (Package Management) Paket Yönetimi
+###########################################################
+
+# Sanal ortamların listelenmesi:
+# conda env list
+
+# Sanal ortam oluşturma:
+# conda create –n myenv
+
+# Sanal ortamı aktif etme:
+# conda activate myenv
+
+# Yüklü paketlerin listelenmesi:
+# conda list
+
+# Paket yükleme:
+# conda install numpy
+
+# Aynı anda birden fazla paket yükleme:
+# conda install numpy scipy pandas
+
+# Paket silme:
+# conda remove package_name
+
+# Belirli bir versiyona göre paket yükleme:
+# conda install numpy=1.20.1
+
+# Paket yükseltme:
+# conda upgrade numpy
+
+# Tüm paketlerin yükseltilmesi:
+# conda update --all
+# conda upgrade --all
+
+# pip: pypi (python package index) paket yönetim aracı
+
+# Paket yükleme:
+# pip install pandas
+
+# Paket yükleme versiyona göre:
+# pip install pandas==1.2.1
+
+# Paketlerin tümünü aktarma:
+# conda env export > environment.yaml/.yml
+# pip env export > requirement.txt
+
+# Sanal ortam silme:
+# conda env remove -n myenv
+
+# Paketleri dosyadan sanal ortama yükleme:
+# conda env create -f environment.yaml
+
+# uv: universal viewer, dosya görüntüleyici
+# uv self update # uv kendini güncelleme
+# uv init example # uv proje başlatma
+# uv add ruff # uv ruff paketini ekleme
+# uv lock # uv paketleri kilitleme/sürüm sabitleme
+# uv sync # uv paketleri senkronize etme
+# uv pip compile requirements.txt # uv pip gereksinimlerini derleme
+# uv venv # uv sanal ortam oluşturma
+# echo 'import requests; print(requests.get("https://astral.sh"))' > example.py # örnek python dosyası oluşturma
+# uv add --script example.py requests # uv requests paketini örnek python dosyasına ekleme
+
+# rm -rf example/ # örnek proje klasörünü silme
+# uv run ruff check . # uv ruff paketini çalıştırma
+# uv run ruff --fix . # uv ruff paketini otomatik düzeltme ile çalıştırma
+# uv list # uv yüklü paketleri listeleme
+# uv install package_name # uv paket yükleme
+# uv uninstall package_name # uv paket kaldırma
+# uv update --all # uv tüm paketleri güncelleme
+# uv upgrade --all # uv tüm paketleri yükseltme
+
+
+########################################################################################################################
+# 2 - VERİ YAPILARI
+########################################################################################################################
+
+###########################################################
+# VERİ YAPILARI (DATA STRUCTURES)
+###########################################################
+
+# - Veri Yapılarına Giriş ve Hızlı Özet
+# - Sayılar (Numbers): int, float, complex
+# - Karakter Dizileri (Strings): str
+# - Boolean (TRUE-FALSE): bool
+# - Liste (List)
+# - Sözlük (Dictionary)
+# - Demet (Tuple)
+# - Set
+
+###########################################################
+# Veri Yapılarına Giriş ve Hızlı Özet
+###########################################################
+
+
+
+########################################################################################################################
+# 3.1 - FONKSİYONLAR
+########################################################################################################################
+
+########################################################################################################################
+# 3.2 - KOŞULLAR VE DÖNGÜLER
+########################################################################################################################
+
+########################################################################################################################
+# 3.3 - COMPREHENSIONS
+########################################################################################################################
+
+########################################################################################################################
+# 4.1 - PYTHON İLE VERİ ANALİZİ: NUMPY
+########################################################################################################################
+
+########################################################################################################################
+# 4.2 - PYTHON İLE VERİ ANALİZİ: PANDAS
+########################################################################################################################
+
+#########################################################################################################################
+# 4.3 - PYTHON İLE VERİ ANALİZİ: VERİ GÖRSELLEŞTİRME
+########################################################################################################################
+
+########################################################################################################################
+# 4.4 - PYTHON İLE VERİ ANALİZİ: GELİŞMİŞ FONKSİYONEL KEŞİFÇİ VERİ ANALİZİ
+########################################################################################################################
+
+########################################################################################################################
+# 5 - MÜLAKAT SORULARI
+########################################################################################################################
+
+########################################################################################################################
+# 6 - CASE STUDY
+########################################################################################################################
+
+
+
+
+
+
 
 
 
 ###################################
-# PANDAS
+# !!!!!!****** DİKKAT ******!!!!!!
 ###################################
 # loc iloc önemli. loc kullanım %99
 
@@ -17,8 +200,10 @@
 # command + f sonra read_ arat sonra kullanabileceğin fonk görünüyor.
 # seçmi olduğun fonk üzerine tıkla + command/ctrl ile fonk içine girer
 
-# df.info() fonksiyonu ile veri seti hakkında bilgi alabiliriz. Veri setindeki sütunların isimleri, veri tipleri ve bellek kullanımı hakkında bilgi verir.
-# df.describe() fonksiyonu ile veri seti hakkında istatistiksel bilgilere ulaşabiliriz. Veri setindeki sayısal sütunlar için ortalama, standart sapma, min, max, çeyreklikler gibi bilgileri verir.
+# df.info() fonksiyonu ile veri seti hakkında bilgi alabiliriz. Veri setindeki sütunların isimleri, veri tipleri ve bellek
+# kullanımı hakkında bilgi verir.
+# df.describe() fonksiyonu ile veri seti hakkında istatistiksel bilgilere ulaşabiliriz. Veri setindeki sayısal sütunlar
+# için ortalama, standart sapma, min, max, çeyreklikler gibi bilgileri verir.
 
 # df.isnull().values #(pandas series) eksik gözlemler numpy array türü. Pandas df' de .values kullanıldığında numpy array'e dönüşür
 
@@ -173,13 +358,5 @@
 # Varsayılan olarak plt.show(block=True) şeklinde çalışır.
 # "Bloklama" (blocking), programın grafiği kapatana kadar diğer kodları çalıştırmasını durdurur.
 # Eğer block=False kullanılırsa, grafik açılır ama kod çalışmaya devam eder.
-
-# !!!!!!****** DİKKAT ******!!!!!!
-#####################################################################
-# GELİŞMİŞ FONKSİYONEL KEŞİFÇİ VERİ ANALİZİ (ADVANCED FUNCTIONAL EDA)
-#####################################################################
-###########################################################
-# Değişkenlerin Yakalanması ve İşlemlerin Genelleştirilmesi
-###########################################################
-# !!!!!!****** DİKKAT ******!!!!!!
-
+# Bu durumda grafik hemen kapanabilir
+# plt.show(block=False) grafik acilir ama kod calismaya devam eder.

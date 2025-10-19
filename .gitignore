@@ -27,3 +27,4 @@ echo '.idea' >> .gitignore
 # Default ignored files
 /shelf/
 /workspace.xml
+*.csv
